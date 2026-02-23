@@ -1,290 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    <!-- ================= HEADER ================= -->
+  
+    <header>
+      <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+              <a href="#">
+                  <img src="./images/G2meLogo.png" alt="Guide2Me Logo">
+                  <span class="subtitle"></span>
+              </a>
+          </div>
+  
+          <!-- Navigation -->
+          <div class="menu-container">
+          <ul class="mega-menu">
+  
+              <!-- All Courses -->
+              <li class="dropdown">
+                  <div>
+                      <span>All Courses</span>
+                      <span class="material-symbols-outlined">
+                          chevron_right
+                      </span>
+                  </div>
+                  <ul class="menu">
+                      <li>
+                          <a href="#">All Courses</a>
+                      </li>
+                      <li class="sub-dropdown">
+                          <div>
+                              <span>Featured</span>
+                              <span class="material-symbols-outlined">
+                                  chevron_right
+                              </span>
+                          </div>
+                          <ul class="sub-menu">
+                              <li>
+                                  <a href="#">Featured</a>
+                              </li>
+                              <li>
+                                  <a href="#">New Releases</a>
+                              </li>
+                           
+                          </ul>
+                      </li>
+                      <li class="sub-dropdown">
+                        <div>
+                          <span>MBA Specializations</span>
+                          <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                        <ul class="sub-menu">
+                          <li><a href="#">Marketing Management</a></li>
+                          <li><a href="#">Financial Management</a></li>
+                          <li><a href="#">Human Resource Management</a></li>
+                          <li><a href="#">Operations Management</a></li>
+                          <li><a href="#">Business Analytics</a></li>
+                          <li><a href="#">International Business</a></li>
+                          <li><a href="#">Entrepreneurship</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="sub-dropdown">
+                        <div>
+                          <span>MBA Programs</span>
+                          <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                        <ul class="sub-menu">
+                          <li><a href="#">Full-Time MBA</a></li>
+                          <li><a href="#">Part-Time MBA</a></li>
+                          <li><a href="#">Executive MBA</a></li>
+                          <li><a href="#">Online MBA</a></li>
+                          <li><a href="#">Distance MBA</a></li>
+                          <li><a href="#">Global MBA</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="sub-dropdown">
+                        <div>
+                          <span>MBA Entrance Exams</span>
+                          <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                        <ul class="sub-menu">
+                          <li><a href="#">CAT</a></li>
+                          <li><a href="#">XAT</a></li>
+                          <li><a href="#">CMAT</a></li>
+                          <li><a href="#">MAT</a></li>
+                          <li><a href="#">GMAT</a></li>
+                          <li><a href="#">ATMA</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="sub-dropdown">
+                        <div>
+                          <span>MBA Resources</span>
+                          <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                        <ul class="sub-menu">
+                          <li><a href="#">Top MBA Colleges</a></li>
+                          <li><a href="#">Admission Process</a></li>
+                          <li><a href="#">Fees Structure</a></li>
+                          <li><a href="#">Scholarships</a></li>
+                          <li><a href="#">Placements</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+              </li>
 
-<header>
-    <div class="container">
-        <!-- Logo -->
-        <div class="logo">
-            <a href="#">
-                <img src="./images/G2meLogo.png" alt="Guide2Me Logo">
-                <span class="subtitle"></span>
-            </a>
-        </div>
-
-        <!-- Navigation -->
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">All Courses</a></li>
-                <li><a href="#">MBA</a></li>
-                <li><a href="#">BMS</a></li>
-                <li><a href="#">BBA</a></li>
-                <li><a href="#">MMS</a></li>
-            </ul>
-        </nav>
-
-    <!-- Login/Signup Buttons -->
-    <div class="auth-buttons">
-        <a href="#" class="btn login">Login</a>
-        <a href="#" class="btn signup">Signup</a>
-    </div>
-        <!-- Hamburger -->
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</header>
-
-<!-- Hero Section  -->
-
-<section class="hero" data-aos="fade-up">
-    <div class="hero-content" data-aos="fade-right">
-        <span class="badge">
-            <span class="badge-img material-icons">warning</span>
-            Find, compare & apply to the right college
-        </span>
-        <h1>Discover the right college for your future</h1>
-        <p class="hero-desc">
-            Search by college name, course, exam,or location and explore curated lists built to help you decide
-            faster.
-        </p>
-        <div class="hero-search" data-aos="fade-up" data-aos-delay="200">
-            <div class="search-input-wrapper">
-                <span class="search-icon material-icons">search</span>
-                <input type="text" placeholder="Search colleges, courses, exams">
-            </div>
-            <button>Search</button>
-        </div>
-        <div class="hero-tags" data-aos="fade-up" data-aos-delay="300">
-            <span>B.Tech Colleges</span>
-            <span>MBA Colleges</span>
-            <span>MBBS Colleges</span>
-            <span>Under ₹2L/year</span>
-        </div>
-        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
-            <span>🏛️ 5,000+ verified colleges</span>
-            <span>⭐ 1M+ student reviews</span>
-        </div>
-    </div>
-
-    <div class="hero-image-slider" data-aos="fade-left">
-        <div class="slider">
-            <img src="./images/college.png" class="slide active" alt="College 1">
-            <img src="./images/college1.jpg" class="slide" alt="College 2">
-            <img src="./images/college2.jpeg" class="slide" alt="College 3">
-        </div>
-
-        <div class="top-search-badge" data-aos="zoom-in">
-            <span class="badge-icon">✔</span>
-            <div class="badge-text">
-                <small>Students prefer</small>
-                <strong>Top searched colleges</strong>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Hero Section End -->
- <!-- USP -->
-
- <section class="refund" data-aos="fade-up">
-    <div>
-        <img src="./images/homepage/admission.svg" alt="Hero Image" class="hero-image">
-        <button class="apply-btn-refund" onclick="applyNow()">Apply now</button>
-    </div>
-</section>
-  <!-- ================= BROWSE BY STREAM ================= -->
-  <section class="browse" data-aos="fade-up">
-    <div class="browse-container">
-        <div class="browse-left" data-aos="fade-right">
-            <h2>Browse by stream & category</h2>
-            <p>Explore top MBA specializations, colleges & entrance-based programs</p>
-            <div class="stream-grid">
-                <span>MBA Finance 450+</span>
-                <span>MBA Marketing 520+</span>
-                <span>MBA HR 380+</span>
-                <span>MBA IT 260+</span>
-                <span>MBA Operations 300+</span>
-                <span>MBA Analytics 210+</span>
-                <span>MBA International Business 190+</span>
-                <span>MBA Entrepreneurship 140+</span>
-            </div>
-        </div>
-        <div class="browse-right" data-aos="fade-left">
-            <div class="type-card">
-                <div class="icon"> <img src="./images/Vector-3.png"></div>
-                <h4>Top B-Schools</h4>
-                <p>Top ranked b-schools in india</p>
-            </div>
-            <div class="type-card">
-                <div class="icon"><img src="./images/Vector-1.png"></div>
-                <h4>Undergraduate (UG)</h4>
-                <p>B.Tech.BBA,B.sc,B.A, </p>
-            </div>
-            <div class="type-card">
-                <div class="icon"> <img src="./images/Vector-1.png"></div>
-                <h4>Postgraduate (PG)</h4>
-                <p>M.Tech, MBA, MSc & more</p>
-            </div>
-            <div class="type-card">
-                <div class="icon"><img src="./images/Vector-2.png"></div>
-                <h4>Government Colleges</h4>
-                <p>NAAC and NIRF ranked institutions</p>
-            </div>
-            <div class="type-card">
-                <div class="icon"> <img src="./images/Vector-2.png"></div>
-                <h4>Private Universities</h4>
-                <p>Modern campuses and industry focus</p>
-            </div>
-            <div class="type-card">
-                <div class="icon"><img src="./images/Vector-4.png"></div>
-                <h4>Top Universities</h4>
-                <p>CAT, XAT, CMAT, MAT</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= EXPLORE BY LOCATION ================= -->
-<section class="location" data-aos="fade-up">
-    <div class="location-inner">
-        <div class="section-location-header" data-aos="fade-right">
-            <h2>Explore by location</h2>
-            <a href="./college_list.html" class="view-all">View all cities</a>
-        </div>
-        <div class="location-subtitle" data-aos="fade-left">
-            Popular cities for MBA admissions
-        </div>
-    </div>
-    <div class="scroll-row" data-aos="fade-up" data-aos-delay="200">
-        <div class="location-card">
-            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
-            <span>Koramangala</span>
-        </div>
-        <div class="location-card">
-            <img src="https://images.unsplash.com/photo-1562979314-bee7453e911c">
-            <span>HSR Layout</span>
-        </div>
-        <div class="location-card">
-            <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f">
-            <span>Bangalore</span>
-        </div>
-        <div class="location-card">
-            <img src="https://images.unsplash.com/photo-1609947017136-9daf32a5eb16">
-            <span>Whitefield</span>
-        </div>
-    </div>
-</section>
-
-<!-- ================= COURSE SECTION ================= -->
-<section class="course-section" data-aos="fade-up">
-    <div class="course-container">
-        <div class="section-header" data-aos="fade-right">
-            <div>
-                <h2>Explore by course-wise college lists</h2>
-                <p class="subtitle">
-                    Jump straight to curated college lists based on popular courses
-                </p>
-            </div>
-            <a href="./college-list.html" class="view-all">View all course-wise lists</a>
-        </div>
-
-        <div class="course-scroll" data-aos="fade-left" data-aos-delay="200">
-            <!-- COURSE CARDS -->
-            <div class="course-card" data-aos="zoom-in" data-aos-delay="300"
-                onclick="location.href='./pages/college_list.html'">
-                <div class="image-wrap">
-                    <span class="pill">B.Tech Colleges</span>
-                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" />
+              <!-- MBA -->
+              <li class="dropdown">
+                <div>
+                    <span>MBA</span>
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
                 </div>
+                <ul class="menu">
+                    <li>
+                        <a href="#">MBA</a>
+                    </li>
+                    <li class="sub-dropdown">
+                        <div>
+                            <span>Featured</span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Featured</a>
+                            </li>
+                            <li>
+                                <a href="#">New Releases</a>
+                            </li>
+                         
+                        </ul>
+                    </li>
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Specializations</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Marketing Management</a></li>
+                        <li><a href="#">Financial Management</a></li>
+                        <li><a href="#">Human Resource Management</a></li>
+                        <li><a href="#">Operations Management</a></li>
+                        <li><a href="#">Business Analytics</a></li>
+                        <li><a href="#">International Business</a></li>
+                        <li><a href="#">Entrepreneurship</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Programs</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Full-Time MBA</a></li>
+                        <li><a href="#">Part-Time MBA</a></li>
+                        <li><a href="#">Executive MBA</a></li>
+                        <li><a href="#">Online MBA</a></li>
+                        <li><a href="#">Distance MBA</a></li>
+                        <li><a href="#">Global MBA</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Entrance Exams</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">CAT</a></li>
+                        <li><a href="#">XAT</a></li>
+                        <li><a href="#">CMAT</a></li>
+                        <li><a href="#">MAT</a></li>
+                        <li><a href="#">GMAT</a></li>
+                        <li><a href="#">ATMA</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Resources</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Top MBA Colleges</a></li>
+                        <li><a href="#">Admission Process</a></li>
+                        <li><a href="#">Fees Structure</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Placements</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- BMS -->
+            <li class="dropdown">
+                <div>
+                    <span>BMS</span>
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="#">BMS</a>
+                    </li>
+                    <li class="sub-dropdown">
+                        <div>
+                            <span>Featured</span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Featured</a>
+                            </li>
+                            <li>
+                                <a href="#">New Releases</a>
+                            </li>
+                         
+                        </ul>
+                    </li>
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Specializations</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Marketing Management</a></li>
+                        <li><a href="#">Financial Management</a></li>
+                        <li><a href="#">Human Resource Management</a></li>
+                        <li><a href="#">Operations Management</a></li>
+                        <li><a href="#">Business Analytics</a></li>
+                        <li><a href="#">International Business</a></li>
+                        <li><a href="#">Entrepreneurship</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Programs</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Full-Time MBA</a></li>
+                        <li><a href="#">Part-Time MBA</a></li>
+                        <li><a href="#">Executive MBA</a></li>
+                        <li><a href="#">Online MBA</a></li>
+                        <li><a href="#">Distance MBA</a></li>
+                        <li><a href="#">Global MBA</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Entrance Exams</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">CAT</a></li>
+                        <li><a href="#">XAT</a></li>
+                        <li><a href="#">CMAT</a></li>
+                        <li><a href="#">MAT</a></li>
+                        <li><a href="#">GMAT</a></li>
+                        <li><a href="#">ATMA</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Resources</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Top MBA Colleges</a></li>
+                        <li><a href="#">Admission Process</a></li>
+                        <li><a href="#">Fees Structure</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Placements</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+             <!-- BBA -->
+             <li class="dropdown">
+                <div>
+                    <span>BBA</span>
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="#">BBA</a>
+                    </li>
+                    <li class="sub-dropdown">
+                        <div>
+                            <span>Featured</span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Featured</a>
+                            </li>
+                            <li>
+                                <a href="#">New Releases</a>
+                            </li>
+                         
+                        </ul>
+                    </li>
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Specializations</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Marketing Management</a></li>
+                        <li><a href="#">Financial Management</a></li>
+                        <li><a href="#">Human Resource Management</a></li>
+                        <li><a href="#">Operations Management</a></li>
+                        <li><a href="#">Business Analytics</a></li>
+                        <li><a href="#">International Business</a></li>
+                        <li><a href="#">Entrepreneurship</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Programs</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Full-Time MBA</a></li>
+                        <li><a href="#">Part-Time MBA</a></li>
+                        <li><a href="#">Executive MBA</a></li>
+                        <li><a href="#">Online MBA</a></li>
+                        <li><a href="#">Distance MBA</a></li>
+                        <li><a href="#">Global MBA</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Entrance Exams</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">CAT</a></li>
+                        <li><a href="#">XAT</a></li>
+                        <li><a href="#">CMAT</a></li>
+                        <li><a href="#">MAT</a></li>
+                        <li><a href="#">GMAT</a></li>
+                        <li><a href="#">ATMA</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Resources</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Top MBA Colleges</a></li>
+                        <li><a href="#">Admission Process</a></li>
+                        <li><a href="#">Fees Structure</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Placements</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+              <!-- MMS -->
+              <li class="dropdown">
+                <div>
+                    <span>MMS</span>
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="#">MMS</a>
+                    </li>
+                    <li class="sub-dropdown">
+                        <div>
+                            <span>Featured</span>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Featured</a>
+                            </li>
+                            <li>
+                                <a href="#">New Releases</a>
+                            </li>
+                         
+                        </ul>
+                    </li>
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Specializations</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Marketing Management</a></li>
+                        <li><a href="#">Financial Management</a></li>
+                        <li><a href="#">Human Resource Management</a></li>
+                        <li><a href="#">Operations Management</a></li>
+                        <li><a href="#">Business Analytics</a></li>
+                        <li><a href="#">International Business</a></li>
+                        <li><a href="#">Entrepreneurship</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Programs</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Full-Time MBA</a></li>
+                        <li><a href="#">Part-Time MBA</a></li>
+                        <li><a href="#">Executive MBA</a></li>
+                        <li><a href="#">Online MBA</a></li>
+                        <li><a href="#">Distance MBA</a></li>
+                        <li><a href="#">Global MBA</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Entrance Exams</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">CAT</a></li>
+                        <li><a href="#">XAT</a></li>
+                        <li><a href="#">CMAT</a></li>
+                        <li><a href="#">MAT</a></li>
+                        <li><a href="#">GMAT</a></li>
+                        <li><a href="#">ATMA</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="sub-dropdown">
+                      <div>
+                        <span>MBA Resources</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a href="#">Top MBA Colleges</a></li>
+                        <li><a href="#">Admission Process</a></li>
+                        <li><a href="#">Fees Structure</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Placements</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+  </div>
+          <!-- Login/Signup Buttons -->
+          <div class="auth-buttons">
+              <a href="#" class="btn login">Login</a>
+              <a href="#" class="btn signup">Signup</a>
+          </div>
+  <div class="buttons">
+        
+          <button class="menu-btn">
+              <span class="material-symbols-outlined">
+                  menu
+              </span>
+          </button>
+      </div>
+      </div>
+  </header>
+  
+    <!-- Hero Section  -->
 
-                <div class="card-content">
-                    <h3>Top B.Tech CSE Colleges in India</h3>
-                    <p class="meta">350+ colleges · JEE Main, MHT CET</p>
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-content" data-aos="fade-right">
+            <span class="badge">
+                <span class="badge-img material-icons">warning</span>
+                Find, compare & apply to the right college
+            </span>
+            <h1>Discover the right college for your future</h1>
+            <p class="hero-desc">
+                Search by college name, course, exam,or location and explore curated lists built to help you decide
+                faster.
+            </p>
+            <div class="hero-search" data-aos="fade-up" data-aos-delay="200">
+                <div class="search-input-wrapper">
+                    <span class="search-icon material-icons">search</span>
+                    <input type="text" placeholder="Search colleges, courses, exams">
+                </div>
+                <button>Search</button>
+            </div>
+            <div class="hero-tags" data-aos="fade-up" data-aos-delay="300">
+                <span>B.Tech Colleges</span>
+                <span>MBA Colleges</span>
+                <span>MBBS Colleges</span>
+                <span>Under ₹2L/year</span>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <span>🏛️ 5,000+ verified colleges</span>
+                <span>⭐ 1M+ student reviews</span>
+            </div>
+        </div>
 
-                    <div class="rating">★★★★☆ <span>4.4</span></div>
+        <div class="hero-image-slider" data-aos="fade-left">
+            <div class="slider">
+                <img src="./images/college.png" class="slide active" alt="College 1">
+                <img src="./images/college1.jpg" class="slide" alt="College 2">
+                <img src="./images/college2.jpeg" class="slide" alt="College 3">
+            </div>
 
-                    <div class="card-bottom">
-                        <p class="meta">Avg fee • ₹1.8L / year</p>
-                        <a href="./college_list.html" class="apply-btn-college">Apply Now</a>
+            <div class="top-search-badge" data-aos="zoom-in">
+                <span class="badge-icon">✔</span>
+                <div class="badge-text">
+                    <small>Students prefer</small>
+                    <strong>Top searched colleges</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- USP -->
+
+    <section class="refund" data-aos="fade-up">
+        <div>
+            <img src="./images/homepage/admission.svg" alt="Hero Image" class="hero-image">
+            <button class="apply-btn-refund" onclick="applyNow()">Apply now</button>
+        </div>
+    </section>
+    <!-- ================= BROWSE BY STREAM ================= -->
+    <section class="browse" data-aos="fade-up">
+        <div class="browse-container">
+            <div class="browse-left" data-aos="fade-right">
+                <h2>Browse by stream & category</h2>
+                <p>Explore top MBA specializations, colleges & entrance-based programs</p>
+                <div class="stream-grid">
+                    <span>MBA Finance 450+</span>
+                    <span>MBA Marketing 520+</span>
+                    <span>MBA HR 380+</span>
+                    <span>MBA IT 260+</span>
+                    <span>MBA Operations 300+</span>
+                    <span>MBA Analytics 210+</span>
+                    <span>MBA International Business 190+</span>
+                    <span>MBA Entrepreneurship 140+</span>
+                </div>
+            </div>
+            <div class="browse-right" data-aos="fade-left">
+                <div class="type-card">
+                    <div class="icon"> <img src="./images/Vector-3.png"></div>
+                    <h4>Top B-Schools</h4>
+                    <p>Top ranked b-schools in india</p>
+                </div>
+                <div class="type-card">
+                    <div class="icon"><img src="./images/Vector-1.png"></div>
+                    <h4>Undergraduate (UG)</h4>
+                    <p>B.Tech.BBA,B.sc,B.A, </p>
+                </div>
+                <div class="type-card">
+                    <div class="icon"> <img src="./images/Vector-1.png"></div>
+                    <h4>Postgraduate (PG)</h4>
+                    <p>M.Tech, MBA, MSc & more</p>
+                </div>
+                <div class="type-card">
+                    <div class="icon"><img src="./images/Vector-2.png"></div>
+                    <h4>Government Colleges</h4>
+                    <p>NAAC and NIRF ranked institutions</p>
+                </div>
+                <div class="type-card">
+                    <div class="icon"> <img src="./images/Vector-2.png"></div>
+                    <h4>Private Universities</h4>
+                    <p>Modern campuses and industry focus</p>
+                </div>
+                <div class="type-card">
+                    <div class="icon"><img src="./images/Vector-4.png"></div>
+                    <h4>Top Universities</h4>
+                    <p>CAT, XAT, CMAT, MAT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXPLORE BY LOCATION ================= -->
+    <section class="location" data-aos="fade-up">
+        <div class="location-inner">
+            <div class="section-location-header" data-aos="fade-right">
+                <h2>Explore by location</h2>
+                <a href="./college_list.html" class="view-all">View all cities</a>
+            </div>
+            <div class="location-subtitle" data-aos="fade-left">
+                Popular cities for MBA admissions
+            </div>
+        </div>
+        <div class="scroll-row" data-aos="fade-up" data-aos-delay="200">
+            <div class="location-card">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+                <span>Koramangala</span>
+            </div>
+            <div class="location-card">
+                <img src="https://images.unsplash.com/photo-1562979314-bee7453e911c">
+                <span>HSR Layout</span>
+            </div>
+            <div class="location-card">
+                <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f">
+                <span>Bangalore</span>
+            </div>
+            <div class="location-card">
+                <img src="https://images.unsplash.com/photo-1609947017136-9daf32a5eb16">
+                <span>Whitefield</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= COURSE SECTION ================= -->
+    <section class="course-section" data-aos="fade-up">
+        <div class="course-container">
+            <div class="section-header" data-aos="fade-right">
+                <div>
+                    <h2>Explore by course-wise college lists</h2>
+                    <p class="subtitle">
+                        Jump straight to curated college lists based on popular courses
+                    </p>
+                </div>
+                <a href="./college-list.html" class="view-all">View all course-wise lists</a>
+            </div>
+
+            <div class="course-scroll" data-aos="fade-left" data-aos-delay="200">
+                <!-- COURSE CARDS -->
+                <div class="course-card" data-aos="zoom-in" data-aos-delay="300"
+                    onclick="location.href='./pages/college_list.html'">
+                    <div class="image-wrap">
+                        <span class="pill">B.Tech Colleges</span>
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" />
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Top B.Tech CSE Colleges in India</h3>
+                        <p class="meta">350+ colleges · JEE Main, MHT CET</p>
+
+                        <div class="rating">★★★★☆ <span>4.4</span></div>
+
+                        <div class="card-bottom">
+                            <p class="meta">Avg fee • ₹1.8L / year</p>
+                            <a href="./college_list.html" class="apply-btn-college">Apply Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div class="course-card" data-aos="zoom-in" data-aos-delay="400"
-                onclick="location.href='./pages/college_list.html'">
-                <div class="image-wrap">
-                    <span class="pill">MBA Colleges</span>
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" />
-                </div>
+                <div class="course-card" data-aos="zoom-in" data-aos-delay="400"
+                    onclick="location.href='./pages/college_list.html'">
+                    <div class="image-wrap">
+                        <span class="pill">MBA Colleges</span>
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" />
+                    </div>
 
-                <div class="card-content">
-                    <h3>Best MBA Colleges for Finance</h3>
-                    <p class="meta">220+ colleges · CAT, XAT, CMAT</p>
+                    <div class="card-content">
+                        <h3>Best MBA Colleges for Finance</h3>
+                        <p class="meta">220+ colleges · CAT, XAT, CMAT</p>
 
-                    <div class="rating">★★★★☆ <span>4.6</span></div>
+                        <div class="rating">★★★★☆ <span>4.6</span></div>
 
-                    <div class="card-bottom">
-                        <p class="meta">Avg fee • ₹1.8L / year</p>
-                        <a href="./college_description.html" class="apply-btn-college">Apply Now</a>
+                        <div class="card-bottom">
+                            <p class="meta">Avg fee • ₹1.8L / year</p>
+                            <a href="./college_description.html" class="apply-btn-college">Apply Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div class="course-card" data-aos="zoom-in" data-aos-delay="500"
-                onclick="location.href='./pages/college_list.html'">
-                <div class="image-wrap">
-                    <span class="pill">MBBS Colleges</span>
-                    <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b" />
-                </div>
+                <div class="course-card" data-aos="zoom-in" data-aos-delay="500"
+                    onclick="location.href='./pages/college_list.html'">
+                    <div class="image-wrap">
+                        <span class="pill">MBBS Colleges</span>
+                        <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b" />
+                    </div>
 
-                <div class="card-content">
-                    <h3>Top Government MBBS Colleges</h3>
-                    <p class="meta">150+ colleges · NEET UG</p>
+                    <div class="card-content">
+                        <h3>Top Government MBBS Colleges</h3>
+                        <p class="meta">150+ colleges · NEET UG</p>
 
-                    <div class="rating">★★★★☆ <span>4.5</span></div>
+                        <div class="rating">★★★★☆ <span>4.5</span></div>
 
-                    <div class="card-bottom">
-                        <p class="meta">Avg fee • ₹1.8L / year</p>
-                        <a href="./college_description.html" class="apply-btn-college">Apply Now</a>
+                        <div class="card-bottom">
+                            <p class="meta">Avg fee • ₹1.8L / year</p>
+                            <a href="./college_description.html" class="apply-btn-college">Apply Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="course-card" data-aos="zoom-in" data-aos-delay="500"
-                onclick="location.href='./pages/college_list.html'">
-                <div class="image-wrap">
-                    <span class="pill">MBBS Colleges</span>
-                    <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b" />
-                </div>
+                <div class="course-card" data-aos="zoom-in" data-aos-delay="500"
+                    onclick="location.href='./pages/college_list.html'">
+                    <div class="image-wrap">
+                        <span class="pill">MBBS Colleges</span>
+                        <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b" />
+                    </div>
 
-                <div class="card-content">
-                    <h3>Top Government MBBS Colleges</h3>
-                    <p class="meta">150+ colleges · NEET UG</p>
+                    <div class="card-content">
+                        <h3>Top Government MBBS Colleges</h3>
+                        <p class="meta">150+ colleges · NEET UG</p>
 
-                    <div class="rating">★★★★☆ <span>4.5</span></div>
+                        <div class="rating">★★★★☆ <span>4.5</span></div>
 
-                    <div class="card-bottom">
-                        <p class="meta">Avg fee • ₹1.8L / year</p>
-                        <a href="./college_description.html" class="apply-btn-college">Apply Now</a>
+                        <div class="card-bottom">
+                            <p class="meta">Avg fee • ₹1.8L / year</p>
+                            <a href="./college_description.html" class="apply-btn-college">Apply Now</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- <div class="course-card" data-aos="zoom-in" data-aos-delay="500"
+                <!-- <div class="course-card" data-aos="zoom-in" data-aos-delay="500"
                 onclick="location.href='./pages/college_list.html'">
                 <div class="image-wrap">
                     <span class="pill">MBBS Colleges</span>
@@ -303,226 +753,226 @@
                     </div>
                 </div>
             </div> -->
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="universities" data-aos="fade-up">
-    <div class="universities-header">
-        <div data-aos="fade-right">
-            <h2>Top universities</h2>
-            <p>Start with top-rated options across streams and cities</p>
-        </div>
-        <a href="#" data-aos="fade-left">Explore top universities</a>
-    </div>
-
-    <div class="universities-grid">
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="100">
-            <img src="./images/collegeImg/college1.png" alt="">
-        </div>
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="150">
-            <img src="./images/collegeImg/college2.png" alt="">
-        </div>
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="200">
-            <img src="./images/collegeImg/college3.png" alt="">
-        </div>
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="250">
-            <img src="./images/collegeImg/college4.png" alt="">
-        </div>
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="300">
-            <img src="./images/collegeImg/college1.png" alt="">
-        </div>
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="350">
-            <img src="./images/collegeImg/college2.png" alt="">
-        </div>
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="400">
-            <img src="./images/collegeImg/college3.png" alt="">
-        </div>
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="450">
-            <img src="./images/collegeImg/college4.png" alt="">
-        </div>
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="500">
-            <img src="./images/collegeImg/college1.png" alt="">
-        </div>
-        <div class="uni-card" data-aos="zoom-in" data-aos-delay="550">
-            <img src="./images/collegeImg/college2.png" alt="">
-        </div>
-    </div>
-</section>
-
-
-
-<!-- ================= QUICK CTA: RECOMMENDED ================= -->
-<section class="cta-section" data-aos="fade-up">
-    <div class="testimonials-container">
-        <div class="cta-header" data-aos="fade-right">
-            <div>
-                <h2>Quick CTA: Recommended colleges & universities</h2>
+    <section class="universities" data-aos="fade-up">
+        <div class="universities-header">
+            <div data-aos="fade-right">
+                <h2>Top universities</h2>
                 <p>Start with top-rated options across streams and cities</p>
             </div>
-
-            <div class="cta-actions" data-aos="fade-left">
-                <a href="#" class="cta-btn">View all</a>
-                <a href="#" class="cta-link">Explore top universities</a>
-            </div>
+            <a href="#" data-aos="fade-left">Explore top universities</a>
         </div>
 
-        <div class="cta-scroll">
-            <div class="cta-card" data-aos="zoom-in" data-aos-delay="100">
-                <div class="cta-img">
-                    <span class="cta-pill">IIBS</span>
-                    <img src="./images/iibs.jpeg">
+        <div class="universities-grid">
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="./images/collegeImg/college1.png" alt="">
+            </div>
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="150">
+                <img src="./images/collegeImg/college2.png" alt="">
+            </div>
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./images/collegeImg/college3.png" alt="">
+            </div>
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="250">
+                <img src="./images/collegeImg/college4.png" alt="">
+            </div>
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="./images/collegeImg/college1.png" alt="">
+            </div>
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="350">
+                <img src="./images/collegeImg/college2.png" alt="">
+            </div>
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="./images/collegeImg/college3.png" alt="">
+            </div>
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="450">
+                <img src="./images/collegeImg/college4.png" alt="">
+            </div>
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="500">
+                <img src="./images/collegeImg/college1.png" alt="">
+            </div>
+            <div class="uni-card" data-aos="zoom-in" data-aos-delay="550">
+                <img src="./images/collegeImg/college2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= QUICK CTA: RECOMMENDED ================= -->
+    <section class="cta-section" data-aos="fade-up">
+        <div class="testimonials-container">
+            <div class="cta-header" data-aos="fade-right">
+                <div>
+                    <h2>Quick CTA: Recommended colleges & universities</h2>
+                    <p>Start with top-rated options across streams and cities</p>
                 </div>
 
-                <div class="cta-content">
-                    <h3>IIBS College of MBA</h3>
-                    <p class="cta-meta">India-wide · JEE Main / Advanced</p>
-
-                    <!-- MOBILE ROW -->
-                    <div class="cta-row">
-                        <div class="cta-left">
-                            <div class="cta-rating">★★★★★ <span>4.7</span></div>
-                            <p class="cta-sub">Avg package: ₹20–30 LPA</p>
-                        </div>
-
-                        <a href="./brochures/iit-nit-brochure.pdf" class="cta-brochure" download>
-                            Brochure ⬇
-                        </a>
-                    </div>
+                <div class="cta-actions" data-aos="fade-left">
+                    <a href="#" class="cta-btn">View all</a>
+                    <a href="#" class="cta-link">Explore top universities</a>
                 </div>
-
             </div>
 
+            <div class="cta-scroll">
+                <div class="cta-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cta-img">
+                        <span class="cta-pill">IIBS</span>
+                        <img src="./images/iibs.jpeg">
+                    </div>
 
-            <div class="cta-card" data-aos="zoom-in" data-aos-delay="200">
-                <div class="cta-img">
-                    <span class="cta-pill">IIBs</span>
-                    <img src="./images/iibs.jpeg">
-                </div>
-                <div class="cta-content">
-                    <h3>IIBS Management College</h3>
-                    <p class="cta-meta">India-wide · CAT, XAT</p>
-                    <!-- MOBILE ROW -->
-                    <div class="cta-row">
-                        <div class="cta-left">
-                            <div class="cta-rating">★★★★★ <span>4.7</span></div>
-                            <p class="cta-sub">Avg package: ₹20–30 LPA</p>
+                    <div class="cta-content">
+                        <h3>IIBS College of MBA</h3>
+                        <p class="cta-meta">India-wide · JEE Main / Advanced</p>
+
+                        <!-- MOBILE ROW -->
+                        <div class="cta-row">
+                            <div class="cta-left">
+                                <div class="cta-rating">★★★★★ <span>4.7</span></div>
+                                <p class="cta-sub">Avg package: ₹20–30 LPA</p>
+                            </div>
+
+                            <a href="./brochures/iit-nit-brochure.pdf" class="cta-brochure" download>
+                                Brochure ⬇
+                            </a>
                         </div>
+                    </div>
 
-                        <a href="./brochures/iit-nit-brochure.pdf" class="cta-brochure" download>
-                            Brochure ⬇
-                        </a>
+                </div>
+
+
+                <div class="cta-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="cta-img">
+                        <span class="cta-pill">IIBs</span>
+                        <img src="./images/iibs.jpeg">
+                    </div>
+                    <div class="cta-content">
+                        <h3>IIBS Management College</h3>
+                        <p class="cta-meta">India-wide · CAT, XAT</p>
+                        <!-- MOBILE ROW -->
+                        <div class="cta-row">
+                            <div class="cta-left">
+                                <div class="cta-rating">★★★★★ <span>4.7</span></div>
+                                <p class="cta-sub">Avg package: ₹20–30 LPA</p>
+                            </div>
+
+                            <a href="./brochures/iit-nit-brochure.pdf" class="cta-brochure" download>
+                                Brochure ⬇
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="cta-card" data-aos="zoom-in" data-aos-delay="300">
-                <div class="cta-img">
-                    <span class="cta-pill">IIBS</span>
-                    <img src="./images/iibs.jpeg">
-                </div>
-                <div class="cta-content">
-                    <h3>AIIMS & top govt MBA</h3>
-                    <p class="cta-meta">India-wide · NEET UG / PG</p>
-                    <!-- MOBILE ROW -->
-                    <div class="cta-row">
-                        <div class="cta-left">
-                            <div class="cta-rating">★★★★★ <span>4.7</span></div>
-                            <p class="cta-sub">Avg package: ₹20–30 LPA</p>
+                <div class="cta-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="cta-img">
+                        <span class="cta-pill">IIBS</span>
+                        <img src="./images/iibs.jpeg">
+                    </div>
+                    <div class="cta-content">
+                        <h3>AIIMS & top govt MBA</h3>
+                        <p class="cta-meta">India-wide · NEET UG / PG</p>
+                        <!-- MOBILE ROW -->
+                        <div class="cta-row">
+                            <div class="cta-left">
+                                <div class="cta-rating">★★★★★ <span>4.7</span></div>
+                                <p class="cta-sub">Avg package: ₹20–30 LPA</p>
+                            </div>
+
+                            <a href="./brochures/iit-nit-brochure.pdf" class="cta-brochure" download>
+                                Brochure ⬇
+                            </a>
                         </div>
-
-                        <a href="./brochures/iit-nit-brochure.pdf" class="cta-brochure" download>
-                            Brochure ⬇
-                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="cta-card" data-aos="zoom-in" data-aos-delay="300">
-                <div class="cta-img">
-                    <span class="cta-pill">AIIMS</span>
-                    <img src="./images/college1.jpg">
-                </div>
-                <div class="cta-content">
-                    <h3>AIIMS & top govt medical</h3>
-                    <p class="cta-meta">India-wide · NEET UG / PG</p>
-                    <!-- MOBILE ROW -->
-                    <div class="cta-row">
-                        <div class="cta-left">
-                            <div class="cta-rating">★★★★★ <span>4.7</span></div>
-                            <p class="cta-sub">Avg package: ₹20–30 LPA</p>
-                        </div>
+                <div class="cta-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="cta-img">
+                        <span class="cta-pill">AIIMS</span>
+                        <img src="./images/college1.jpg">
+                    </div>
+                    <div class="cta-content">
+                        <h3>AIIMS & top govt medical</h3>
+                        <p class="cta-meta">India-wide · NEET UG / PG</p>
+                        <!-- MOBILE ROW -->
+                        <div class="cta-row">
+                            <div class="cta-left">
+                                <div class="cta-rating">★★★★★ <span>4.7</span></div>
+                                <p class="cta-sub">Avg package: ₹20–30 LPA</p>
+                            </div>
 
-                        <a href="./brochures/iit-nit-brochure.pdf" class="cta-brochure" download>
-                            Brochure ⬇
-                        </a>
+                            <a href="./brochures/iit-nit-brochure.pdf" class="cta-brochure" download>
+                                Brochure ⬇
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
+    </section>
 
-    </div>
-</section>
+    <section class="banner" data-aos="fade-up">
+        <div class="banner-content" data-aos="fade-right">
+            <img src="./images/scholarship.svg">
+        </div>
+        <div class="banner-btn" data-aos="fade-left">
+            <img src="./images/applynow.png">
+        </div>
+    </section>
 
-<section class="banner" data-aos="fade-up">
-    <div class="banner-content" data-aos="fade-right">
-        <img src="./images/scholarship.svg">
-    </div>
-    <div class="banner-btn" data-aos="fade-left">
-        <img src="./images/applynow.png">
-    </div>
-</section>
+    <section class="testimonials" data-aos="fade-up">
+        <div class="testimonials-container">
+            <div class="testimonials-inner">
 
-<section class="testimonials" data-aos="fade-up">
-    <div class="testimonials-container">
-        <div class="testimonials-inner">
+                <h2 class="title" data-aos="fade-down">Trusted Voices</h2>
+                <p class="subtitle" data-aos="fade-down" data-aos-delay="100">
+                    Hear the trusted persons what they say about us
+                </p>
 
-            <h2 class="title" data-aos="fade-down">Trusted Voices</h2>   
-            <p class="subtitle" data-aos="fade-down" data-aos-delay="100">
-                Hear the trusted persons what they say about us 
-            </p>
+                <div class="cards">
+                    <div class="card" style="background-image:url('./images/1.jpg')" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <div class="overlay"></div>
+                        <div class="play-btn">▶</div>
+                        <div class="info">
+                            <h4>John Deo</h4>
+                            <span>Sr. Manager</span>
+                        </div>
+                    </div>
 
-            <div class="cards">
-                <div class="card" style="background-image:url('./images/1.jpg')" data-aos="zoom-in"
-                    data-aos-delay="100">
-                    <div class="overlay"></div>
-                    <div class="play-btn">▶</div>
-                    <div class="info">
-                        <h4>John Deo</h4>
-                        <span>Sr. Manager</span>
+                    <div class="card" style="background-image:url('./images/2.jpg')" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="overlay"></div>
+                        <div class="play-btn">▶</div>
+                        <div class="info">
+                            <h4>Rafal Nadar</h4>
+                            <span>Manager</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="background-image:url('./images/3.jpg')" data-aos="zoom-in"
+                        data-aos-delay="300">
+                        <div class="overlay"></div>
+                        <div class="play-btn">▶</div>
+                        <div class="info">
+                            <h4>Stany Sameul</h4>
+                            <span>MBA, Finance</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="background-image:url('./images/4.jpg')" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <div class="overlay"></div>
+                        <div class="play-btn">▶</div>
+                        <div class="info">
+                            <h4>Patrik Goyal</h4>
+                            <span>BBA, AIM Bangalore</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card" style="background-image:url('./images/2.jpg')" data-aos="zoom-in"
-                    data-aos-delay="200">
-                    <div class="overlay"></div>
-                    <div class="play-btn">▶</div>
-                    <div class="info">
-                        <h4>Rafal Nadar</h4>
-                        <span>Manager</span>
-                    </div>
-                </div>
-
-                <div class="card" style="background-image:url('./images/3.jpg')" data-aos="zoom-in"
-                    data-aos-delay="300">
-                    <div class="overlay"></div>
-                    <div class="play-btn">▶</div>
-                    <div class="info">
-                        <h4>Stany Sameul</h4>
-                        <span>MBA, Finance</span>
-                    </div>
-                </div>
-
-                <div class="card" style="background-image:url('./images/4.jpg')" data-aos="zoom-in"
-                    data-aos-delay="400">
-                    <div class="overlay"></div>
-                    <div class="play-btn">▶</div>
-                    <div class="info">
-                        <h4>Patrik Goyal</h4>
-                        <span>BBA, AIM Bangalore</span>
-                    </div>
-                </div>
-</div>
             </div>
 
             <div class="dots" data-aos="fade-up" data-aos-delay="200">
@@ -533,75 +983,75 @@
             </div>
 
         </div>
-    </div>
-</section>
+        </div>
+    </section>
 
-<section class="guide-section" data-aos="fade-up">
-    <div class="guide-card" data-aos="fade-up" data-aos-delay="100">
-        <h2 data-aos="fade-down">How Guide2Me helps you decide</h2>
+    <section class="guide-section" data-aos="fade-up">
+        <div class="guide-card" data-aos="fade-up" data-aos-delay="100">
+            <h2 data-aos="fade-down">How Guide2Me helps you decide</h2>
 
-        <div class="guide-steps">
-            <div class="step" data-aos="fade-up" data-aos-delay="150">
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="guide-steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="150">
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h4>Search & filter</h4>
+                    <p>
+                        Use powerful filters by location, course, fees, exams, and more to narrow down options.
+                    </p>
                 </div>
-                <h4>Search & filter</h4>
-                <p>
-                    Use powerful filters by location, course, fees, exams, and more to narrow down options.
-                </p>
-            </div>
 
-            <div class="step" data-aos="fade-up" data-aos-delay="250">
-                <div class="icon">
-                    <i class="fa-solid fa-list-check"></i>
+                <div class="step" data-aos="fade-up" data-aos-delay="250">
+                    <div class="icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h4>Compare & Shortlist</h4>
+                    <p>
+                        Compare colleges on ranking, fees, placement & reviews.
+                    </p>
                 </div>
-                <h4>Compare & Shortlist</h4>
-                <p>
-                    Compare colleges on ranking, fees, placement & reviews.
-                </p>
-            </div>
 
-            <div class="step" data-aos="fade-up" data-aos-delay="350">
-                <div class="icon">
-                    <i class="fa-solid fa-pen-to-square"></i>
+                <div class="step" data-aos="fade-up" data-aos-delay="350">
+                    <div class="icon">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <h4>Apply & Track</h4>
+                    <p>
+                        Apply to multiple colleges and track your application status.
+                    </p>
                 </div>
-                <h4>Apply & Track</h4>
-                <p>
-                    Apply to multiple colleges and track your application status.
-                </p>
-            </div>
 
-            <div class="step" data-aos="fade-up" data-aos-delay="450">
-                <div class="icon">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                <div class="step" data-aos="fade-up" data-aos-delay="450">
+                    <div class="icon">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+                    <h4>Great Discount</h4>
+                    <p>
+                        Get up to ₹50,000 refund when you apply through us.
+                    </p>
                 </div>
-                <h4>Great Discount</h4>
-                <p>
-                    Get up to ₹50,000 refund when you apply through us.
-                </p>
             </div>
         </div>
-    </div>
 
-    <!-- CTA -->
-    <div class="guide-cta" data-aos="fade-up" data-aos-delay="200">
-        <div class="cta-text" data-aos="fade-right">
-            <h3>How Guide2Me helps you decide</h3>
-            <p>Get College Notifications, Exam Notifications and News Updates</p>
-        </div>
-
-        <form class="cta-form" data-aos="fade-left">
-            <div class="input-wrap">
-                <i class="fa-solid fa-phone"></i>
-                <input type="tel" placeholder="Enter your mobile number" />
+        <!-- CTA -->
+        <div class="guide-cta" data-aos="fade-up" data-aos-delay="200">
+            <div class="cta-text" data-aos="fade-right">
+                <h3>How Guide2Me helps you decide</h3>
+                <p>Get College Notifications, Exam Notifications and News Updates</p>
             </div>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</section>
 
-<section class="articles-section" data-aos="fade-up">
-    <!-- <div class="container"> -->
+            <form class="cta-form" data-aos="fade-left">
+                <div class="input-wrap">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" placeholder="Enter your mobile number" />
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="articles-section" data-aos="fade-up">
+        <!-- <div class="container"> -->
         <h2 class="section-title" data-aos="fade-down">Our Recent Article</h2>
 
         <div class="articles-grid">
@@ -650,8 +1100,8 @@
                 </div>
             </div>
         </div>
-    <!-- </div> -->
-</section>
+        <!-- </div> -->
+    </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="g-footer" data-aos="fade-up">
@@ -704,16 +1154,76 @@
         </div>
     </footer>
 
-
 <script>
-    // Toggle menu on mobile
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    // Get elements from the DOM
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu-container');
+const dropdowns = document.querySelectorAll('.dropdown > div');
+const subDropdowns = document.querySelectorAll('.sub-dropdown > div');
 
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-        hamburger.classList.toggle('active');
+// Toggle variable
+let menuOpen = false;
+
+// Set click event to menu button
+menuBtn.addEventListener('click', ()=>{
+    // Toggle mega menu show class
+    menu.classList.toggle('mega-menu-show');
+    // If the menu open variable is false
+    if(menuOpen===false){
+        // Set the close icon to the menu button
+        menuBtn.innerHTML=`
+        <span class="material-symbols-outlined">
+            close
+        </span>
+        `;
+        // Set menu open to true
+        menuOpen = true;
+    }
+    else{
+        // Set the menu icon to the menu button
+        menuBtn.innerHTML=`
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+        `;
+        // Set menu open to false
+        menuOpen = false;
+    }
+});
+
+// Select all dropdowns
+dropdowns.forEach(dropdown=>{
+    // Add click event
+    dropdown.addEventListener("click", (e)=>{
+        // Toggle dropdown menu show class
+        dropdown.nextElementSibling.classList.toggle('menu-show');
+        // Toggle icon rotated class
+        dropdown.lastElementChild.classList.toggle('icon-rotated');
     });
+});
+
+// Select all sub dropdowns
+subDropdowns.forEach(subDropdown=>{
+    // Add click event
+    subDropdown.addEventListener('click', (e)=>{
+        // Toggle sub dropdown menu show class
+        subDropdown.nextElementSibling.classList.toggle('sub-menu-show');
+        // Toggle icon rotated class
+        subDropdown.lastElementChild.classList.toggle('icon-rotated');
+    });
+});
+
+
+</script>
+    <script>
+        // Toggle menu on mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
 
         const slides = document.querySelectorAll('.slide');
         let currentIndex = 0;
@@ -724,15 +1234,16 @@
             slides[currentIndex].classList.add('active');
         }, 3500);
 
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // animation duration in ms
-    once: true, // animation happens only once
-    offset: 100, // offset (in px) from the original trigger point
-  });
-</script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true, // animation happens only once
+            offset: 100, // offset (in px) from the original trigger point
+        });
+    </script>
 
 </body>
+
 </html>
