@@ -1,434 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>College Listing</title>
-    <link rel="stylesheet" href="./css/college_list.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Listing</title>
+  <link rel="stylesheet" href="./css/college_list.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-    />
-  </head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
-  <body>
-    <!-- ================= HEADER ================= -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
+</head>
 
-    <header>
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">
-                    <img src="./images/G2meLogo.png" alt="Guide2Me Logo">
-                    <span class="subtitle"></span>
-                </a>
-            </div>
-    
-            <!-- Navigation -->
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">All Courses</a></li>
-                    <li><a href="#">MBA</a></li>
-                    <li><a href="#">BMS</a></li>
-                    <li><a href="#">BBA</a></li>
-                    <li><a href="#">MMS</a></li>
-                </ul>
-            </nav>
-    
-        <!-- Login/Signup Buttons -->
-        <div class="auth-buttons">
-            <a href="#" class="btn login">Login</a>
-            <a href="#" class="btn signup">Signup</a>
+<body>
+  <!-- ================= HEADER ================= -->
+
+  <header>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#">
+          <img src="./images/G2meLogo.png" alt="Guide2Me Logo">
+          <span class="subtitle"></span>
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">All Courses</a></li>
+          <li><a href="#">MBA</a></li>
+          <li><a href="#">BMS</a></li>
+          <li><a href="#">BBA</a></li>
+          <li><a href="#">MMS</a></li>
+        </ul>
+      </nav>
+
+      <!-- Login/Signup Buttons -->
+      <div class="auth-buttons">
+        <a href="#" class="btn login">Login</a>
+        <a href="#" class="btn signup">Signup</a>
+      </div>
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!-- BANNER -->
+
+  <div class="section-wrapper">
+    <div class="section-box" data-aos="fade-up">
+      <div class="top-row" data-aos="fade-down" data-aos-delay="100">
+        <div class="breadcrumb" data-aos="fade-right">
+          <span class="home-icon">🏠</span>
+          <span> / MBA / Top MBA Colleges In India</span>
         </div>
-            <!-- Hamburger -->
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
-    <!-- BANNER -->
-
-    <div class="section-wrapper">
-      <div class="section-box" data-aos="fade-up">
-        <div class="top-row" data-aos="fade-down" data-aos-delay="100">
-          <div class="breadcrumb" data-aos="fade-right">
-            <span class="home-icon">🏠</span>
-            <span> / MBA / Top MBA Colleges In India</span>
-          </div>
-          <div class="search-box" data-aos="fade-left">
-            <svg
-              class="search-icon"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <input type="text" id="searchInput" placeholder="Search college" />
-          </div>
-        </div>
-
-        <!-- Updated info -->
-        <p class="updated-info" data-aos="fade-up" data-aos-delay="100">
-          Updated on Jan 9, 2026 12:07 IST
-        </p>
-
-        <!-- Author -->
-        <div class="author-row" data-aos="fade-up" data-aos-delay="100">
-          <img src="./images/collegelogo.jpg" alt="Author" />
-          <div>
-            <h4>Aquib Rahman <span class="verified">✔</span></h4>
-            <p>Assistant Manager</p>
-          </div>
-        </div>
-
-        <!-- Title -->
-        <h1 class="article-title" data-aos="fade-up" data-aos-delay="200">
-          Top MBA Colleges in India 2026: Ranking, Fees, Admission, Courses,
-          Placements
-        </h1>
-
-        <!-- Description -->
-        <p class="article-desc" data-aos="fade-up" data-aos-delay="250">
-          Find <strong>120 top MBA colleges in India</strong> from Shiksha’s
-          curated list of <strong>5900+ management institutes</strong>. Sort the
-          top MBA colleges you are planning to study at based on
-          <strong>NIRF 2025, Business Today, and Outlook</strong> rankings.
-          Explore options beyond the IIMs in Ahmedabad, Bangalore, and other
-          cities across India. Discover which
-          <strong>50+ government colleges</strong> offer excellent MBA
-          opportunities apart from
-          <strong>70+ private institutions</strong> that accept
-          <strong>CAT, XAT, or CMAT</strong> entrance exams along with their
-          fees and locations.
-        </p>
-
-        <!-- Latest Update -->
-        <div class="latest-update" data-aos="fade-left" data-aos-delay="300">
-          <h4>LATEST UPDATE:</h4>
-          <ul>
-            <li>
-              <a href="#">MAT 2026 February exams</a> are scheduled for
-              <strong>March 1 (PBT)</strong> and
-              <strong>March 8, 2026 (CBT)</strong>.
-            </li>
-          </ul>
-          <a href="#" class="read-more">Read More</a>
-        </div>
-
-        <!-- Share -->
-        <div class="share-row" data-aos="zoom-in" data-aos-delay="350">
-          <span>Share this :</span>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fa-solid fa-envelope"></i>
+        <div class="search-box" data-aos="fade-left">
+          <svg class="search-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search college" />
         </div>
       </div>
 
-      <section class="banner" data-aos="zoom-in">
-        <div class="banner-content">
-          <img
-            src="../images/scholarship.svg"
-            alt="Scholarship Banner"
-          />
+      <!-- Updated info -->
+      <p class="updated-info" data-aos="fade-up" data-aos-delay="100">
+        Updated on Jan 9, 2026 12:07 IST
+      </p>
+
+      <!-- Author -->
+      <div class="author-row" data-aos="fade-up" data-aos-delay="100">
+        <img src="./images/collegelogo.jpg" alt="Author" />
+        <div>
+          <h4>Aquib Rahman <span class="verified">✔</span></h4>
+          <p>Assistant Manager</p>
         </div>
+      </div>
 
-        <div class="banner-btn">
-          <img src="../images/applynow.png" alt="Apply Now" />
-        </div>
-      </section>
-      <div class="page">
-        <!-- LEFT FILTERS -->
-        <aside class="filters" data-aos="fade-up">
-          <!-- <h3>MBA Filters - Bangalore</h3> -->
+      <!-- Title -->
+      <h1 class="article-title" data-aos="fade-up" data-aos-delay="200">
+        Top MBA Colleges in India 2026: Ranking, Fees, Admission, Courses,
+        Placements
+      </h1>
 
-          <div class="filter-group">
-            <h4>Location (Area)</h4>
-            <div id="areaFilters"></div>
-          </div>
+      <!-- Description -->
+      <p class="article-desc" data-aos="fade-up" data-aos-delay="250">
+        Find <strong>120 top MBA colleges in India</strong> from Shiksha’s
+        curated list of <strong>5900+ management institutes</strong>. Sort the
+        top MBA colleges you are planning to study at based on
+        <strong>NIRF 2025, Business Today, and Outlook</strong> rankings.
+        Explore options beyond the IIMs in Ahmedabad, Bangalore, and other
+        cities across India. Discover which
+        <strong>50+ government colleges</strong> offer excellent MBA
+        opportunities apart from
+        <strong>70+ private institutions</strong> that accept
+        <strong>CAT, XAT, or CMAT</strong> entrance exams along with their
+        fees and locations.
+      </p>
 
-          <div class="filter-group">
-            <h4>Program Type</h4>
-            <div id="programFilters"></div>
-          </div>
+      <!-- Latest Update -->
+      <div class="latest-update" data-aos="fade-left" data-aos-delay="300">
+        <h4>LATEST UPDATE:</h4>
+        <ul>
+          <li>
+            <a href="#">MAT 2026 February exams</a> are scheduled for
+            <strong>March 1 (PBT)</strong> and
+            <strong>March 8, 2026 (CBT)</strong>.
+          </li>
+        </ul>
+        <a href="#" class="read-more">Read More</a>
+      </div>
 
-          <div class="filter-group">
-            <h4>Fees</h4>
-            <div id="feesFilters"></div>
-          </div>
-
-          <div class="filter-group">
-            <h4>Specialization</h4>
-            <div id="specializationFilters"></div>
-          </div>
-          <div class="filter-group">
-            <h4>Exams Accepted</h4>
-            <div id="examFilters"></div>
-          </div>
-
-          <div class="filter-group">
-            <h4>Ratings</h4>
-            <div id="ratingFilters"></div>
-          </div>
-
-          <div class="filter-group">
-            <h4>College Types</h4>
-            <div id="collegeTypeFilters"></div>
-          </div>
-        </aside>
-
-        <!-- RIGHT COLLEGE LIST -->
-
-        <div class="college-wrapper" data-aos="fade-up">
-          <h4>College List</h4>
-          <main class="college-list" id="collegeList" data-aos="fade-up"></main>
-          <!-- Pagination -->
-          <div id="pagination" class="pagination" data-aos="fade-up"></div>
-        </div>
+      <!-- Share -->
+      <div class="share-row" data-aos="zoom-in" data-aos-delay="350">
+        <span>Share this :</span>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fa-solid fa-envelope"></i>
       </div>
     </div>
 
-    <!-- CTA SECTION -->
-    <section class="cta-section" data-aos="fade-up">
-      <div class="testimonials-container">
-        <div class="cta-header">
-          <div>
-            <h2>Quick CTA: Recommended colleges & universities</h2>
-            <p>Start with top-rated options across streams and cities</p>
-          </div>
+    <section class="banner" data-aos="zoom-in">
+      <div class="banner-content">
+        <img src="./images/scholarship.png" alt="Scholarship Banner" />
+      </div>
 
-          <div class="cta-actions">
-            <a href="#" class="cta-btn">View all</a>
-            <a href="#" class="cta-link">Explore top universities</a>
+      <div class="banner-btn">
+        <img src="./images/applynow.png" alt="Apply Now" />
+      </div>
+    </section>
+    <div class="page">
+      <!-- LEFT FILTERS -->
+      <aside class="filters" data-aos="fade-up">
+        <!-- <h3>MBA Filters - Bangalore</h3> -->
+
+        <div class="filter-group">
+          <h4>Location (Area)</h4>
+          <div id="areaFilters"></div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Program Type</h4>
+          <div id="programFilters"></div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Fees</h4>
+          <div id="feesFilters"></div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Specialization</h4>
+          <div id="specializationFilters"></div>
+        </div>
+        <div class="filter-group">
+          <h4>Exams Accepted</h4>
+          <div id="examFilters"></div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Ratings</h4>
+          <div id="ratingFilters"></div>
+        </div>
+
+        <div class="filter-group">
+          <h4>College Types</h4>
+          <div id="collegeTypeFilters"></div>
+        </div>
+      </aside>
+
+      <!-- RIGHT COLLEGE LIST -->
+
+      <div class="college-wrapper" data-aos="fade-up">
+        <h4>College List</h4>
+        <main class="college-list" id="collegeList" data-aos="fade-up"></main>
+        <!-- Pagination -->
+        <div id="pagination" class="pagination" data-aos="fade-up"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section" data-aos="fade-up">
+    <div class="testimonials-container">
+      <div class="cta-header">
+        <div>
+          <h2>Quick CTA: Recommended colleges & universities</h2>
+          <p>Start with top-rated options across streams and cities</p>
+        </div>
+
+        <div class="cta-actions">
+          <a href="#" class="cta-btn">View all</a>
+          <a href="#" class="cta-link">Explore top universities</a>
+        </div>
+      </div>
+
+      <div class="cta-scroll">
+        <div class="cta-card" data-aos="zoom-in">
+          <!-- CLICKABLE IMAGE -->
+          <a href="./college_details.html" class="cta-img-link">
+            <div class="cta-img">
+              <span class="cta-pill">IITs & NITs</span>
+              <img src="./images/college2.jpeg" alt="IITs & NITs" />
+            </div>
+          </a>
+
+          <div class="cta-content">
+            <h3>National level IITs & NITs</h3>
+            <p class="cta-meta">India-wide · JEE Main / Advanced</p>
+
+            <div class="cta-row">
+              <!-- LEFT STACK -->
+              <div class="cta-left">
+                <div class="cta-rating">★★★★★ <span>4.7</span></div>
+                <p class="cta-sub">Avg package · ₹20–30 LPA</p>
+              </div>
+
+              <!-- RIGHT BUTTON -->
+              <div class="cta-action">
+                <button class="cta-apply">Brochure ⬇</button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="cta-scroll">
-          <div class="cta-card" data-aos="zoom-in">
-            <!-- CLICKABLE IMAGE -->
-            <a href="./college_details.html" class="cta-img-link">
-              <div class="cta-img">
-                <span class="cta-pill">IITs & NITs</span>
-                <img src="./images/college2.jpeg" alt="IITs & NITs" />
+        <!-- CARD 2 -->
+        <div class="cta-card" data-aos="zoom-in" data-aos-delay="150">
+          <a href="./college_details.html" class="cta-img-link">
+            <div class="cta-img">
+              <span class="cta-pill">IIMs</span>
+              <img src="./images/collegeimg.png" />
+            </div>
+          </a>
+
+          <div class="cta-content">
+            <h3>IIMs & leading B-schools</h3>
+            <p class="cta-meta">India-wide · CAT, XAT</p>
+
+            <div class="cta-row">
+              <!-- LEFT STACK -->
+              <div class="cta-left">
+                <div class="cta-rating">★★★★★ <span>4.0</span></div>
+                <p class="cta-sub">Avg package · ₹20–30 LPA</p>
               </div>
-            </a>
 
-            <div class="cta-content">
-              <h3>National level IITs & NITs</h3>
-              <p class="cta-meta">India-wide · JEE Main / Advanced</p>
-
-              <div class="cta-row">
-                <!-- LEFT STACK -->
-                <div class="cta-left">
-                  <div class="cta-rating">★★★★★ <span>4.7</span></div>
-                  <p class="cta-sub">Avg package · ₹20–30 LPA</p>
-                </div>
-
-                <!-- RIGHT BUTTON -->
-                <div class="cta-action">
-                  <button class="cta-apply">Brochure ⬇</button>
-                </div>
+              <!-- RIGHT BUTTON -->
+              <div class="cta-action">
+                <button class="cta-apply">Brochure ⬇</button>
               </div>
             </div>
           </div>
+        </div>
+        <div class="cta-card" data-aos="zoom-in" data-aos-delay="300">
+          <a href="./college_details.html" class="cta-img-link">
+            <div class="cta-img">
+              <span class="cta-pill">AIIMS</span>
+              <img src="./images/collegeimg.png" />
+            </div>
+          </a>
+          <div class="cta-content">
+            <h3>AIIMS & top govt medical</h3>
+            <p class="cta-meta">India-wide · NEET UG / PG</p>
 
-          <!-- CARD 2 -->
-          <div class="cta-card" data-aos="zoom-in" data-aos-delay="150">
-            <a href="./college_details.html" class="cta-img-link">
-              <div class="cta-img">
-                <span class="cta-pill">IIMs</span>
-                <img src="./images/collegeimg.png" />
+            <div class="cta-row">
+              <!-- LEFT STACK -->
+              <div class="cta-left">
+                <div class="cta-rating">★★★★★ <span>4.8</span></div>
+                <p class="cta-sub">Avg package · ₹20–30 LPA</p>
               </div>
-            </a>
 
-            <div class="cta-content">
-              <h3>IIMs & leading B-schools</h3>
-              <p class="cta-meta">India-wide · CAT, XAT</p>
-
-              <div class="cta-row">
-                <!-- LEFT STACK -->
-                <div class="cta-left">
-                  <div class="cta-rating">★★★★★ <span>4.0</span></div>
-                  <p class="cta-sub">Avg package · ₹20–30 LPA</p>
-                </div>
-
-                <!-- RIGHT BUTTON -->
-                <div class="cta-action">
-                  <button class="cta-apply">Brochure ⬇</button>
-                </div>
+              <!-- RIGHT BUTTON -->
+              <div class="cta-action">
+                <button class="cta-apply">Brochure ⬇</button>
               </div>
             </div>
           </div>
-          <div class="cta-card" data-aos="zoom-in" data-aos-delay="300">
-            <a href="./college_details.html" class="cta-img-link">
-              <div class="cta-img">
-                <span class="cta-pill">AIIMS</span>
-                <img src="./images/collegeimg.png" />
-              </div>
-            </a>
-            <div class="cta-content">
-              <h3>AIIMS & top govt medical</h3>
-              <p class="cta-meta">India-wide · NEET UG / PG</p>
+        </div>
 
-              <div class="cta-row">
-                <!-- LEFT STACK -->
-                <div class="cta-left">
-                  <div class="cta-rating">★★★★★ <span>4.8</span></div>
-                  <p class="cta-sub">Avg package · ₹20–30 LPA</p>
-                </div>
-
-                <!-- RIGHT BUTTON -->
-                <div class="cta-action">
-                  <button class="cta-apply">Brochure ⬇</button>
-                </div>
-              </div>
+        <div class="cta-card" data-aos="zoom-in">
+          <!-- CLICKABLE IMAGE -->
+          <a href="./college_details.html" class="cta-img-link">
+            <div class="cta-img">
+              <span class="cta-pill">IITs & NITs</span>
+              <img src="./images/college2.jpeg" alt="IITs & NITs" />
             </div>
-          </div>
+          </a>
+          <div class="cta-content">
+            <h3>National level IITs & NITs</h3>
+            <p class="cta-meta">India-wide · JEE Main / Advanced</p>
 
-          <div class="cta-card" data-aos="zoom-in">
-            <!-- CLICKABLE IMAGE -->
-            <a href="./college_details.html" class="cta-img-link">
-              <div class="cta-img">
-                <span class="cta-pill">IITs & NITs</span>
-                <img src="./images/college2.jpeg" alt="IITs & NITs" />
+            <div class="cta-row">
+              <!-- LEFT STACK -->
+              <div class="cta-left">
+                <div class="cta-rating">★★★★★ <span>4.9</span></div>
+                <p class="cta-sub">Avg package · ₹20–30 LPA</p>
               </div>
-            </a>
-            <div class="cta-content">
-              <h3>National level IITs & NITs</h3>
-              <p class="cta-meta">India-wide · JEE Main / Advanced</p>
 
-              <div class="cta-row">
-                <!-- LEFT STACK -->
-                <div class="cta-left">
-                  <div class="cta-rating">★★★★★ <span>4.9</span></div>
-                  <p class="cta-sub">Avg package · ₹20–30 LPA</p>
-                </div>
-
-                <!-- RIGHT BUTTON -->
-                <div class="cta-action">
-                  <button class="cta-apply">Brochure ⬇</button>
-                </div>
+              <!-- RIGHT BUTTON -->
+              <div class="cta-action">
+                <button class="cta-apply">Brochure ⬇</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- GUIDE -->
-    <section class="guide-section" data-aos="fade-up">
-      <div class="guide-card">
-        <h2>How Guide2Me helps you decide</h2>
+  <!-- GUIDE -->
+  <section class="guide-section" data-aos="fade-up">
+    <div class="guide-card">
+      <h2>How Guide2Me helps you decide</h2>
 
-        <div class="guide-steps">
-          <div class="step" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <h4>Search & filter</h4>
-            <p>
-              Use powerful filters by location, course, fees, exams, and more.
-            </p>
-          </div>
-
-          <div class="step" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="fa-solid fa-list-check"></i></div>
-            <h4>Compare & Shortlist</h4>
-            <p>Compare colleges on ranking, fees, placement & reviews.</p>
-          </div>
-
-          <div class="step" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="fa-solid fa-pen-to-square"></i></div>
-            <h4>Apply & Track</h4>
-            <p>Apply to multiple colleges and track your application status.</p>
-          </div>
-
-          <div class="step" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon">
-              <i class="fa-solid fa-indian-rupee-sign"></i>
-            </div>
-            <h4>Great Discount</h4>
-            <p>Get up to ₹50,000 refund when you apply through us.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="g-footer" data-aos="fade-up">
-      <div class="footer-top">
-        <div class="footer-col">
-          <h4>Guide2Me</h4>
+      <div class="guide-steps">
+        <div class="step" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <h4>Search & filter</h4>
           <p>
-            Helping students discover, compare and apply to the right colleges
-            with confidence.
+            Use powerful filters by location, course, fees, exams, and more.
           </p>
         </div>
 
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <a href="#">Top Colleges</a>
-          <a href="#">Courses</a>
-          <a href="#">Exams</a>
-          <a href="#">Rankings</a>
+        <div class="step" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon"><i class="fa-solid fa-list-check"></i></div>
+          <h4>Compare & Shortlist</h4>
+          <p>Compare colleges on ranking, fees, placement & reviews.</p>
         </div>
 
-        <div class="footer-col">
-          <h4>Resources</h4>
-          <a href="#">Guides & Articles</a>
-          <a href="#">College Reviews</a>
-          <a href="#">Scholarships</a>
-          <a href="#">FAQ's</a>
+        <div class="step" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon"><i class="fa-solid fa-pen-to-square"></i></div>
+          <h4>Apply & Track</h4>
+          <p>Apply to multiple colleges and track your application status.</p>
         </div>
 
-        <div class="footer-col">
-          <h4>Exams</h4>
-          <a href="#">CAT</a>
-          <a href="#">MAT</a>
-          <a href="#">CMAT</a>
-          <a href="#">XAT</a>
-          <a href="#">GMAT</a>
-        </div>
-
-        <div class="footer-col">
-          <h4>Courses</h4>
-          <a href="#">MBA</a>
-          <a href="#">PGDM</a>
-          <a href="#">Executive MBA</a>
-          <a href="#">Distance MBA</a>
+        <div class="step" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+          </div>
+          <h4>Great Discount</h4>
+          <p>Get up to ₹50,000 refund when you apply through us.</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="footer-bottom">© 2025 Guide2Me. All rights reserved.</div>
-    </footer>
+  <!-- ================= FOOTER ================= -->
+  <footer class="g-footer" data-aos="fade-up">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>Guide2Me</h4>
+        <p>
+          Helping students discover, compare and apply to the right colleges
+          with confidence.
+        </p>
+      </div>
 
-    <!-- Scripts  -->
-    <script src="./js/data.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000, // animation duration in ms
-        once: true, // animation happens only once
-        offset: 100, // offset (in px) from the original trigger point
-      });
-    </script>
-  </body>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#">Top Colleges</a>
+        <a href="#">Courses</a>
+        <a href="#">Exams</a>
+        <a href="#">Rankings</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#">Guides & Articles</a>
+        <a href="#">College Reviews</a>
+        <a href="#">Scholarships</a>
+        <a href="#">FAQ's</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Exams</h4>
+        <a href="#">CAT</a>
+        <a href="#">MAT</a>
+        <a href="#">CMAT</a>
+        <a href="#">XAT</a>
+        <a href="#">GMAT</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <a href="#">MBA</a>
+        <a href="#">PGDM</a>
+        <a href="#">Executive MBA</a>
+        <a href="#">Distance MBA</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">© 2025 Guide2Me. All rights reserved.</div>
+  </footer>
+
+  <!-- Scripts  -->
+  <script src="./js/data.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // animation happens only once
+      offset: 100, // offset (in px) from the original trigger point
+    });
+  </script>
+</body>
+
 </html>

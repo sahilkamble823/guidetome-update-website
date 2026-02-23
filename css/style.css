@@ -2250,7 +2250,8 @@ header {
 
 /* Image Container */
 .banner-content {
-    flex: 1;
+    display: block; /* or */
+    align-items: flex-start;
 }
 
 /* Responsive Image */
@@ -2292,6 +2293,7 @@ header {
         flex-direction: column;
         padding: 12px;
         height: auto;
+        margin-top: 20px;
     }
 
     .banner-content img {
