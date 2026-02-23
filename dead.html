@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>College Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/description-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="g-header" data-aos="fade-down">
+      <div class="header-top">
+        <img src="./images/G2meLogo.png" alt="" class="modal-logo">
+        <!-- <div class="logo">Guide2Me</div> -->
+
+        <nav class="main-nav" id="main-nav">
+          <a href="#">All Courses</a>
+          <a href="#">B.Tech</a>
+          <a href="#">MBA</a>
+          <a href="#">B.Com</a>
+          <a href="#">MBBS</a>
+          <a href="#">BBA</a>
+          <a href="#">MCA</a>
+        </nav>
+
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Search colleges, courses, exams..."
+        />
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="header-right">
+          <a href="#" class="login-link">Log in</a>
+          <a href="#" class="signup-btn">Sign up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+      <!-- HERO BACKGROUND -->
+      <div class="hero-bg"></div>
+      <div class="hero-media mobile-only">
+        <img src="./images/college1.jpg" alt="College Media" />
+
+        <div class="media-badge">
+          <i class="fa-solid fa-circle-play"></i>
+          <span>1 Video · 7 Photos</span>
+        </div>
+      </div>
+
+      <!-- FLOATING HEADER CARD -->
+      <div class="hero-card">
+        <div class="mobile-logo">
+          <img src="./images/collegelogo.jpg" alt="College Logo" />
+        </div>
+
+        <div class="hero-left">
+          <h2>Institute of Technology, Pune</h2>
+          <p>📍 Shivajinagar, Pune, Maharashtra</p>
+
+          <div class="tags">
+            <span>Government Aided</span>
+            <span>Est. 1854</span>
+            <span>Autonomous</span>
+          </div>
+
+          <div class="rating">
+            <span class="rating-badge">
+              4.3 <i class="fa-solid fa-star"></i>
+            </span>
+            <a href="#" class="review-link">Read 1,245 Reviews</a>
+          </div>
+
+          <div class="rank">🏆 NIRF 2024: Ranked #24 in Engineering</div>
+        </div>
+
+        <div class="hero-middle">
+          <h4>Our Unique Advantage</h4>
+          <p>Apply with confidence.<br />Get Scholarship upto <b>₹50,000</b></p>
+        </div>
+
+        <div class="hero-right">
+          <div class="packages">
+            <div>
+              <small>Highest Package</small>
+              <h4>₹1.2 Cr / year</h4>
+            </div>
+            <div>
+              <small>Avg. Package</small>
+              <h4>₹7.80 LPA</h4>
+            </div>
+          </div>
+
+          <button class="apply-btn">Apply Now</button>
+
+          <div class="hero-actions">
+            <button class="brochure-btn">⬇ Brochure</button>
+            <button class="save-btn">
+              <i class="fa-regular fa-bookmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs" data-aos="fade-up">
+      <a class="active">Overview</a>
+      <a data-aos="fade-up" data-aos-delay="100">Courses & Fees</a>
+      <a data-aos="fade-up" data-aos-delay="200">Admissions 2025</a>
+      <a data-aos="fade-up" data-aos-delay="300">Placements</a>
+      <a data-aos="fade-up" data-aos-delay="400">Facilities</a>
+      <a data-aos="fade-up" data-aos-delay="500">Reviews</a>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div class="container" data-aos="fade-up">
+      <!-- LEFT CONTENT -->
+      <div class="left">
+        <div class="card about-card" data-aos="fade-up">
+          <h3 class="about-title">About Institute of Technology, Pune</h3>
+
+          <p class="about-text">
+            The Institute of Technology, Pune is known for excellence in
+            education, research, and innovation. With top accreditations, modern
+            infrastructure, and industry-focused programs, the institute
+            prepares students for leadership roles in technology and management.
+          </p>
+          <p class="about-text">
+            The Institute of Technology is recognized for excellence in
+            education, research, and innovation. Accredited with the highest
+            grade, it offers world-class programs, state-of-the-art
+            facilities, and a vibrant learning environment that empowers
+            students to excel in technology and beyond.
+          </p>
+
+          <div class="about-action">
+            <a href="#" class="read-more-btn">Read more →</a>
+          </div>
+        </div>
+
+        <div class="main-container">
+          <div class="highlights">
+            <div class="highlight-card" data-aos="zoom-in" data-aos-delay="100">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <h4>NAAC A+ Grade</h4>
+                <p>Accredited with highest grade</p>
+              </div>
+            </div>
+
+            <div class="highlight-card" data-aos="zoom-in" data-aos-delay="200">
+              <i class="fa-solid fa-user-graduate"></i>
+              <div>
+                <h4>100% Placement</h4>
+                <p>For CS & IT branches</p>
+              </div>
+            </div>
+
+            <div class="highlight-card" data-aos="zoom-in" data-aos-delay="300">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <h4>NAAC A+ Grade</h4>
+                <p>Accredited with highest grade</p>
+              </div>
+            </div>
+
+            <div class="highlight-card" data-aos="zoom-in" data-aos-delay="400">
+              <i class="fa-solid fa-user-graduate"></i>
+              <div>
+                <h4>100% Placement</h4>
+                <p>For CS & IT branches</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-aos="fade-up">
+          <h3>Courses & Fees</h3>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>Total Fees</th>
+                  <th>Eligibility</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><strong>B.Tech in Computer Engineering</strong></td>
+                  <td>₹5.40 Lakhs</td>
+                  <td>10+2 with 75% + JEE Main</td>
+                  <td><button class="apply-btn">Apply</button></td>
+                </tr>
+
+                <tr>
+                  <td><strong>B.Tech in Mechanical Engineering</strong></td>
+                  <td>₹5.40 Lakhs</td>
+                  <td>10+2 with 75% + MHT CET</td>
+                  <td><button class="apply-btn">Apply</button></td>
+                </tr>
+
+                <tr>
+                  <td><strong>M.Tech in Data Science</strong></td>
+                  <td>₹2.10 Lakhs</td>
+                  <td>B.Tech + GATE Score</td>
+                  <td><button class="apply-btn">Apply</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="view-more">View More</div>
+        </div>
+
+        <div class="facility-card">
+          <h3>Facilities</h3>
+
+          <div class="facilities">
+            <div class="facility-item" data-aos="fade-up" data-aos-delay="100">
+              <span class="material-icons">menu_book</span>
+              <p>Central Library</p>
+            </div>
+
+            <div class="facility-item" data-aos="fade-up" data-aos-delay="200">
+              <span class="material-icons">wifi</span>
+              <p>Campus Wi-Fi</p>
+            </div>
+
+            <div class="facility-item" data-aos="fade-up" data-aos-delay="300">
+              <span class="material-icons">local_cafe</span>
+              <p>Cafeteria</p>
+            </div>
+
+            <div class="facility-item" data-aos="fade-up" data-aos-delay="400">
+              <span class="material-icons">fitness_center</span>
+              <p>Sports Complex</p>
+            </div>
+
+            <div class="facility-item" data-aos="fade-up" data-aos-delay="500">
+              <span class="material-icons">local_hospital</span>
+              <p>Medical Facility</p>
+            </div>
+          </div>
+        </div>
+        <div class="card review-card" data-aos="fade-up">
+          <h3>Reviews & Rating</h3>
+
+          <div class="review-wrapper">
+            <!-- LEFT SCORE -->
+            <div class="review-score">
+              <h2>4.3</h2>
+              <span>/ 5</span>
+            </div>
+
+            <!-- RIGHT BARS -->
+            <div class="review-bars">
+              <div class="review-row">
+                <div class="review-label">
+                  <p>Placement</p>
+                  <span>4.8</span>
+                </div>
+                <div class="bar"><span style="width: 96%"></span></div>
+              </div>
+
+              <div class="review-row">
+                <div class="review-label">
+                  <p>Infrastructure</p>
+                  <span>4.1</span>
+                </div>
+                <div class="bar"><span style="width: 82%"></span></div>
+              </div>
+
+              <div class="review-row">
+                <div class="review-label">
+                  <p>Faculty</p>
+                  <span>4.5</span>
+                </div>
+                <div class="bar"><span style="width: 90%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card student-reviews" data-aos="fade-up">
+          <h3>
+            What students say about –
+            <span>Institute of Technology, Pune</span>
+          </h3>
+
+          <!-- TABS -->
+          <div class="review-tabs">
+            <button class="active">Placement</button>
+            <button>Infrastructure</button>
+            <button>Faculty</button>
+            <button>Other</button>
+          </div>
+
+          <hr />
+
+          <!-- LIKES -->
+          <div class="review-section likes">
+            <h4>Likes</h4>
+            <ul>
+              <li>
+                Top recruiters are Microsoft, Oracle, Barclay, Goldman Sachs,
+                Ola, Morgan Stanley, JPMC SDE, Grow, and SRID.
+                <span>(107 Reviews)</span>
+              </li>
+              <li>
+                Other than this students get placed in different sectors like
+                finance, data science and consultancy.
+                <span>(112 Reviews)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- DISLIKES -->
+          <div class="review-section dislikes">
+            <h4>Dislikes</h4>
+            <ul>
+              <li>
+                There are no placement for M.Sc. students in our department
+                because only coaching center is offering the job with low salary
+                package. So students are not interested in it.
+                <span>(13 Reviews)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card faq-card" data-aos="fade-up">
+          <h3 class="faq-title">
+            Commonly asked questions <span class="faq-icon">💬</span>
+          </h3>
+
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>Q: How can I get admission to IOT Pune for BTech?</span>
+              <i class="arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The Institute of Technology is recognized for excellence in
+                education, research, and innovation. Accredited with the highest
+                grade, it offers world-class programs, state-of-the-art
+                facilities, and a vibrant learning environment that empowers
+                students to excel in technology and beyond.
+              </p>
+              
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q: How can I get admission to IOT Pune for BTech?</span>
+              <i class="arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Admissions are based on entrance exams such as JEE Main or
+                MHT-CET, followed by counseling and seat allotment.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q: How can I get admission to IOT Pune for BTech?</span>
+              <i class="arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Candidates must meet eligibility criteria including academic
+                performance and entrance exam scores.
+              </p>
+            </div>
+          </div>
+        </div>
+        <section class="discover-section" data-aos="fade-up">
+          <div class="section-header">
+            <h3 class="section-title">Discover More Colleges</h3>
+            <a href="./college_list.html" class="view-all">View All</a>
+          </div>
+
+          <div class="college-grid" data-aos="fade-up">
+            <div
+              class="college-card"
+              onclick="openCollegeList()"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="college-img">
+                <span class="badge">IITs & NITs</span>
+                <img src="./images/college1.jpg" alt="College" />
+              </div>
+
+              <h4>National level IITs & NITs</h4>
+              <p class="sub-text">India-wide JEE Main / Advanced</p>
+              <div class="card-bottom">
+                <div class="left-info">
+                  <span class="package">Avg pack : ₹20–30 LPA</span>
+                  <span class="stars">4.7 ★★★★★</span>
+                </div>
+
+                <a
+                  href="./brochures/iit-nit-brochure.pdf"
+                  class="cta-brochure"
+                  download
+                >
+                  Brochure ⬇
+                </a>
+              </div>
+            </div>
+            <!-- CARD -->
+            <div class="college-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="college-img">
+                <span class="badge">IITs & NITs</span>
+                <img src="./images/college2.jpeg" alt="College" />
+              </div>
+
+              <h4>National level IITs & NITs</h4>
+              <p class="sub-text">India-wide JEE Main / Advanced</p>
+
+              <div class="card-bottom">
+                <div class="left-info">
+                  <span class="package">Avg pack : ₹10–20 LPA</span>
+                  <span class="stars">4.7 ★★★★★</span>
+                </div>
+
+                <a
+                  href="./brochures/iit-nit-brochure.pdf"
+                  class="cta-brochure"
+                  download
+                >
+                  Brochure ⬇
+                </a>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="college-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="college-img">
+                <span class="badge">IITs & NITs</span>
+                <img src="./images/college.png" alt="College" />
+              </div>
+
+              <h4>National level IITs & NITs</h4>
+              <p class="sub-text">India-wide JEE Main / Advanced</p>
+
+              <div class="card-bottom">
+                <div class="left-info">
+                  <span class="package">Avg pack : ₹30–35 LPA</span>
+                  <span class="stars">4.8 ★★★★★</span>
+                </div>
+
+                <a
+                  href="./brochures/iit-nit-brochure.pdf"
+                  class="cta-brochure"
+                  download
+                >
+                  Brochure ⬇
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div class="right" data-aos="fade-left">
+        <!-- Photos & Videos -->
+         <!-- <div class="card"> -->
+        <div class="card-img card" data-aos="fade-left" data-aos-delay="100">
+          <h3>Photos and Videos</h3>
+
+          <!-- Top large image -->
+          <div class="gallery-top">
+            <img src="./images/college1.jpg" alt="Main Image" />
+          </div>
+
+          <!-- Row with 2 images -->
+          <div class="gallery-row-2">
+            <img src="./images/college2.jpeg" alt="Image 2" />
+            <img src="./images/college1.jpg" alt="Image 3" />
+          </div>
+
+          <!-- 2 rows with 3 images each -->
+          <div class="gallery-row-3">
+            <img src="./images/college1.jpg" alt="Image 4" />
+            <img src="./images/college2.jpeg" alt="Image 5" />
+            <img src="./images/college1.jpg" alt="Image 6" />
+            <img src="./images/college1.jpg" alt="Image 7" />
+            <img src="./images/college2.jpeg" alt="Image 8" />
+            <img src="./images/college1.jpg" alt="Image 9" />
+          </div>
+        </div>
+    <!-- </div> -->
+
+        <!-- Similar Colleges -->
+        <div class="card">
+          <h3>Similar Colleges</h3>
+          <div class="college-item" data-aos="fade-left" data-aos-delay="200">
+            <img src="./images/college1.jpg" />
+            <div>
+              <h4>VJTI Mumbai</h4>
+              <p>Mumbai, Maharashtra</p>
+              <a href="#">View Details</a>
+            </div>
+          </div>
+
+          <div class="college-item" data-aos="fade-left" data-aos-delay="300">
+            <img src="./images/college2.jpeg" />
+            <div>
+              <h4>SPIT Mumbai</h4>
+              <p>Mumbai, Maharashtra</p>
+              <a href="#">View Details</a>
+            </div>
+          </div>
+
+          <div class="college-item" data-aos="fade-left" data-aos-delay="400">
+            <img src="./images/college.png" />
+            <div>
+              <h4>Walchand College</h4>
+              <p>Sangli, Maharashtra</p>
+              <a href="#">View Details</a>
+            </div>
+          </div>
+
+          <div class="view-suggestion-wrapper">
+            <a href="#" class="view-suggestion">View all suggestions</a>
+          </div>
+        </div>
+
+        <!-- Updates & News -->
+        <div class="card">
+          <h3>Updates & News</h3>
+
+          <div class="news-item">
+            <span class="dot"></span>
+            <p>Admissions forms for 2025 batch are out.</p>
+          </div>
+
+          <div class="news-item">
+            <span class="dot"></span>
+            <p>New AI & DS lab inaugurated by State Education Minister.</p>
+          </div>
+
+          <div class="news-item">
+            <span class="dot"></span>
+            <p>Semester exams schedule announced.</p>
+          </div>
+        </div>
+
+        <!-- PROMO CARD -->
+        <div class="promo-card" data-aos="zoom-in">
+          <img src="./images/college1.jpg" />
+          <h4>MUMBAI UNIVERSITY</h4>
+
+          <ul>
+            <li>Top Ranked Courses</li>
+            <li>World-Class Faculty</li>
+            <li>Beautiful Campus</li>
+          </ul>
+
+          <button class="apply-now">APPLY NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="g-footer" data-aos="fade-up">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-col">
+            <h4>Guide2Me</h4>
+            <p>
+              Helping students discover, compare and apply to the right colleges
+              with confidence.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="#">Top Colleges</a>
+            <a href="#">Courses</a>
+            <a href="#">Exams</a>
+            <a href="#">Rankings</a>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="#">Guides & Articles</a>
+            <a href="#">College Reviews</a>
+            <a href="#">Scholarships</a>
+            <a href="#">FAQ's</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Exams</h4>
+            <a href="#">CAT</a>
+            <a href="#">MAT</a>
+            <a href="#">CMAT</a>
+            <a href="#">XAT</a>
+            <a href="#">GMAT</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Courses</h4>
+            <a href="#">MBA</a>
+            <a href="#">PGDM</a>
+            <a href="#">Executive MBA</a>
+            <a href="#">Distance MBA</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">© 2025 Guide2Me. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+          faqItems.forEach((i) => {
+            if (i !== item) i.classList.remove("active");
+          });
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const nav = document.getElementById("main-nav");
+
+        hamburger.addEventListener("click", function () {
+          nav.classList.toggle("active");
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
+</html>
